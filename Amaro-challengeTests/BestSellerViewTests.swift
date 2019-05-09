@@ -111,6 +111,10 @@ class BestSellerViewMock : BestSellerViewProtocol {
         callSetNotificationButton = true
         self.badge = badge
     }
+    
+    func reloadData() {
+        
+    }
 }
 
 class BestSellerModelMockSuccess: BestSellerModelProtocol {
