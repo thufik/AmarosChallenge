@@ -1,24 +1,351 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1NX-x5-LSk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Desafio Amaro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BestSellersViewController" customModule="Amaro_challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="26N-FW-fGh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mUQ-Tk-Oq9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ETu-Uy-VRg">
+                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="26N-FW-fGh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LGt-7j-qBP"/>
+                            <constraint firstItem="26N-FW-fGh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k22-A9-vcg"/>
+                            <constraint firstItem="26N-FW-fGh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qmZ-i2-Vbp"/>
+                            <constraint firstItem="26N-FW-fGh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tZZ-ib-F5v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Desafio Amaro" id="5RK-90-4I3"/>
+                    <connections>
+                        <outlet property="bestSellerCollectionView" destination="26N-FW-fGh" id="jNi-vA-qdT"/>
+                        <outlet property="bestSellerCollectionviewFlowLayout" destination="mUQ-Tk-Oq9" id="8Eb-58-yfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="204" y="1034"/>
+        </scene>
+        <!--Sacola-->
+        <scene sceneID="ZDA-kk-zc1">
+            <objects>
+                <viewController id="Qpx-X9-9cZ" customClass="CartViewController" customModule="Amaro_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SG-n8-NZx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aGq-nE-zU2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aGq-nE-zU2" firstAttribute="top" secondItem="SKs-Nd-YKG" secondAttribute="top" id="0Xq-GB-F27"/>
+                            <constraint firstItem="aGq-nE-zU2" firstAttribute="leading" secondItem="SKs-Nd-YKG" secondAttribute="leading" id="bw0-Kr-rj2"/>
+                            <constraint firstItem="aGq-nE-zU2" firstAttribute="bottom" secondItem="SKs-Nd-YKG" secondAttribute="bottom" id="vnk-YD-Kou"/>
+                            <constraint firstItem="aGq-nE-zU2" firstAttribute="trailing" secondItem="SKs-Nd-YKG" secondAttribute="trailing" id="wyD-7X-Jny"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SKs-Nd-YKG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sacola" id="y1c-06-UC8"/>
+                    <connections>
+                        <outlet property="carttTableView" destination="aGq-nE-zU2" id="BE9-Ha-4oQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3h-Gk-pbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="1039"/>
+        </scene>
+        <!--Detalhes-->
+        <scene sceneID="rCf-fg-0YA">
+            <objects>
+                <viewController id="7mR-hh-ebC" customClass="DetailViewController" customModule="Amaro_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2L1-us-c7o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VXN-eh-d66">
+                                <rect key="frame" x="0.0" y="64" width="375" height="333.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJz-zp-8Cx">
+                                <rect key="frame" x="10" y="407.5" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy6-x0-JNH">
+                                <rect key="frame" x="10" y="438.5" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE1-rW-tIF">
+                                <rect key="frame" x="57.5" y="438.5" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.5399678349" green="0.58941191429999995" blue="0.53144937749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0a-lx-LRd">
+                                <rect key="frame" x="75" y="627" width="225" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Adicionar ao carrinho">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToCart:" destination="7mR-hh-ebC" eventType="touchUpInside" id="gqb-iV-jdB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8R-d1-41E">
+                                <rect key="frame" x="10" y="476.5" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrP-8s-EVL">
+                                <rect key="frame" x="10" y="466.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.5399678349" green="0.58941191429999995" blue="0.53144937749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-0G-Uc4">
+                                <rect key="frame" x="27" y="466.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.9493377221" green="0.069154394689999996" blue="0.1241866742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFY-bB-bqa">
+                                <rect key="frame" x="10" y="504.5" width="355" height="112.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozr-4j-wzY" customClass="myButton" customModule="Amaro_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="27.5" width="58" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ozr-4j-wzY" secondAttribute="height" multiplier="40:40" id="xzq-lO-z7s"/>
+                                        </constraints>
+                                        <state key="normal" title="PP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AJ-Wf-KeK" customClass="myButton" customModule="Amaro_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="83" y="27.5" width="58" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0AJ-Wf-KeK" secondAttribute="height" multiplier="40:40" id="t2z-iC-fhb"/>
+                                        </constraints>
+                                        <state key="normal" title="P">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-Zs-jmx" customClass="myButton" customModule="Amaro_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="151" y="27.5" width="58" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bdX-Zs-jmx" secondAttribute="height" multiplier="40:40" id="6AW-Bb-Bbx"/>
+                                        </constraints>
+                                        <state key="normal" title="M">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-1e-1Wb" customClass="myButton" customModule="Amaro_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="219" y="27.5" width="58" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iyS-1e-1Wb" secondAttribute="height" multiplier="40:40" id="3Hg-yY-Lm9"/>
+                                        </constraints>
+                                        <state key="normal" title="G">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7H-5f-TkA" customClass="myButton" customModule="Amaro_challenge" customModuleProvider="target">
+                                        <rect key="frame" x="287" y="27.5" width="58" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n7H-5f-TkA" secondAttribute="height" multiplier="40:40" id="iDa-Xn-vfD"/>
+                                        </constraints>
+                                        <state key="normal" title="GG">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="n7H-5f-TkA" firstAttribute="leading" secondItem="iyS-1e-1Wb" secondAttribute="trailing" constant="10" id="9AR-Mq-Gln"/>
+                                    <constraint firstItem="bdX-Zs-jmx" firstAttribute="width" secondItem="iyS-1e-1Wb" secondAttribute="width" id="CRF-Zw-hNu"/>
+                                    <constraint firstItem="bdX-Zs-jmx" firstAttribute="centerY" secondItem="pFY-bB-bqa" secondAttribute="centerY" id="EEW-8f-cK9"/>
+                                    <constraint firstItem="iyS-1e-1Wb" firstAttribute="width" secondItem="n7H-5f-TkA" secondAttribute="width" id="Fwy-tg-Mf1"/>
+                                    <constraint firstItem="Ozr-4j-wzY" firstAttribute="width" secondItem="0AJ-Wf-KeK" secondAttribute="width" id="OUR-iS-gVc"/>
+                                    <constraint firstItem="bdX-Zs-jmx" firstAttribute="leading" secondItem="0AJ-Wf-KeK" secondAttribute="trailing" constant="10" id="WVO-ec-Exn"/>
+                                    <constraint firstItem="n7H-5f-TkA" firstAttribute="centerY" secondItem="pFY-bB-bqa" secondAttribute="centerY" id="ZXE-6N-qbd"/>
+                                    <constraint firstItem="Ozr-4j-wzY" firstAttribute="leading" secondItem="pFY-bB-bqa" secondAttribute="leading" constant="15" id="iJS-J8-8Ju"/>
+                                    <constraint firstItem="Ozr-4j-wzY" firstAttribute="centerY" secondItem="pFY-bB-bqa" secondAttribute="centerY" id="igi-Gj-M16"/>
+                                    <constraint firstItem="iyS-1e-1Wb" firstAttribute="centerY" secondItem="pFY-bB-bqa" secondAttribute="centerY" id="nC5-FU-Jql"/>
+                                    <constraint firstItem="0AJ-Wf-KeK" firstAttribute="centerY" secondItem="pFY-bB-bqa" secondAttribute="centerY" id="nhn-wX-ons"/>
+                                    <constraint firstItem="0AJ-Wf-KeK" firstAttribute="width" secondItem="bdX-Zs-jmx" secondAttribute="width" id="ue6-sE-EDN"/>
+                                    <constraint firstItem="iyS-1e-1Wb" firstAttribute="leading" secondItem="bdX-Zs-jmx" secondAttribute="trailing" constant="10" id="uiD-rC-lzF"/>
+                                    <constraint firstItem="0AJ-Wf-KeK" firstAttribute="leading" secondItem="Ozr-4j-wzY" secondAttribute="trailing" constant="10" id="xpi-nJ-OvN"/>
+                                    <constraint firstAttribute="trailing" secondItem="n7H-5f-TkA" secondAttribute="trailing" constant="10" id="zCU-pT-SzL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hrP-8s-EVL" firstAttribute="top" secondItem="cy6-x0-JNH" secondAttribute="bottom" constant="10" id="4UT-xr-Nd0"/>
+                            <constraint firstItem="F0a-lx-LRd" firstAttribute="top" secondItem="pFY-bB-bqa" secondAttribute="bottom" constant="10" id="4zy-1y-Ljm"/>
+                            <constraint firstItem="H8R-d1-41E" firstAttribute="top" secondItem="hrP-8s-EVL" secondAttribute="bottom" constant="10" id="656-6B-jxe"/>
+                            <constraint firstItem="MNA-iO-tb6" firstAttribute="trailing" secondItem="VXN-eh-d66" secondAttribute="trailing" id="7T7-I7-BRN"/>
+                            <constraint firstItem="H8R-d1-41E" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" constant="10" id="BmM-B1-3fN"/>
+                            <constraint firstItem="F0a-lx-LRd" firstAttribute="centerX" secondItem="MNA-iO-tb6" secondAttribute="centerX" id="Ffb-ke-PXk"/>
+                            <constraint firstItem="xE1-rW-tIF" firstAttribute="leading" secondItem="cy6-x0-JNH" secondAttribute="trailing" constant="10" id="M3J-lG-ird"/>
+                            <constraint firstItem="xJz-zp-8Cx" firstAttribute="top" secondItem="VXN-eh-d66" secondAttribute="bottom" constant="10" id="NUO-uL-oTs"/>
+                            <constraint firstItem="pFY-bB-bqa" firstAttribute="top" secondItem="H8R-d1-41E" secondAttribute="bottom" constant="10" id="PyA-MB-pjv"/>
+                            <constraint firstItem="hrP-8s-EVL" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" constant="10" id="THg-DC-YDP"/>
+                            <constraint firstItem="pFY-bB-bqa" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" constant="10" id="WNQ-Hm-8jO"/>
+                            <constraint firstItem="MNA-iO-tb6" firstAttribute="bottom" secondItem="F0a-lx-LRd" secondAttribute="bottom" constant="10" id="ZPg-rA-nSg"/>
+                            <constraint firstItem="MNA-iO-tb6" firstAttribute="trailing" secondItem="xJz-zp-8Cx" secondAttribute="trailing" constant="10" id="eow-ed-Fe4"/>
+                            <constraint firstItem="F0a-lx-LRd" firstAttribute="width" secondItem="2L1-us-c7o" secondAttribute="width" multiplier="0.6" id="hb6-He-z6d"/>
+                            <constraint firstItem="xJz-zp-8Cx" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" constant="10" id="iUs-R6-NBa"/>
+                            <constraint firstItem="xE1-rW-tIF" firstAttribute="top" secondItem="xJz-zp-8Cx" secondAttribute="bottom" constant="10" id="jCr-gd-XVq"/>
+                            <constraint firstItem="oaX-0G-Uc4" firstAttribute="top" secondItem="cy6-x0-JNH" secondAttribute="bottom" constant="10" id="k3b-eY-nTa"/>
+                            <constraint firstItem="cy6-x0-JNH" firstAttribute="top" secondItem="xJz-zp-8Cx" secondAttribute="bottom" constant="10" id="kyr-4R-Zp6"/>
+                            <constraint firstItem="VXN-eh-d66" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" id="lcZ-IG-exm"/>
+                            <constraint firstItem="cy6-x0-JNH" firstAttribute="leading" secondItem="MNA-iO-tb6" secondAttribute="leading" constant="10" id="mLV-BN-YUu"/>
+                            <constraint firstItem="VXN-eh-d66" firstAttribute="height" secondItem="2L1-us-c7o" secondAttribute="height" multiplier="0.5" id="stJ-lM-Y2I"/>
+                            <constraint firstItem="MNA-iO-tb6" firstAttribute="trailing" secondItem="pFY-bB-bqa" secondAttribute="trailing" constant="10" id="v6h-S3-hh3"/>
+                            <constraint firstItem="oaX-0G-Uc4" firstAttribute="leading" secondItem="hrP-8s-EVL" secondAttribute="trailing" constant="17" id="xpc-YP-7ZB"/>
+                            <constraint firstItem="VXN-eh-d66" firstAttribute="top" secondItem="MNA-iO-tb6" secondAttribute="top" id="zeT-h4-oVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MNA-iO-tb6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalhes" id="nat-50-sly">
+                        <barButtonItem key="leftBarButtonItem" title="cancel" image="Down" id="fQY-pA-dCs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="dismiss:" destination="7mR-hh-ebC" id="lNJ-ig-XIc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAddToCart" destination="F0a-lx-LRd" id="c7m-c3-I8U"/>
+                        <outlet property="btnG" destination="iyS-1e-1Wb" id="DeW-Wa-DaD"/>
+                        <outlet property="btnGG" destination="n7H-5f-TkA" id="38K-NM-yqx"/>
+                        <outlet property="btnM" destination="bdX-Zs-jmx" id="CQa-Ir-yms"/>
+                        <outlet property="btnP" destination="0AJ-Wf-KeK" id="YQC-i9-lu2"/>
+                        <outlet property="btnPP" destination="Ozr-4j-wzY" id="ImL-GL-nKg"/>
+                        <outlet property="lblColor" destination="H8R-d1-41E" id="4CA-rk-1IR"/>
+                        <outlet property="lblDiscountPercentage" destination="oaX-0G-Uc4" id="LTA-lJ-AJZ"/>
+                        <outlet property="lblDiscountPrice" destination="hrP-8s-EVL" id="usT-Qu-3r5"/>
+                        <outlet property="lblInstallments" destination="xE1-rW-tIF" id="eNr-TM-4Ng"/>
+                        <outlet property="lblName" destination="xJz-zp-8Cx" id="Oq4-wf-drJ"/>
+                        <outlet property="lblPrice" destination="cy6-x0-JNH" id="osQ-xS-feM"/>
+                        <outlet property="productImageview" destination="VXN-eh-d66" id="9XD-s0-cwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBO-d4-cVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="334"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XdZ-kR-FfN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1NX-x5-LSk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iwV-Rp-hBh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KDj-hq-fSy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxD-1Y-1cX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="1034"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K8p-5b-TCp">
+            <objects>
+                <navigationController storyboardIdentifier="detailViewController" automaticallyAdjustsScrollViewInsets="NO" id="Dvg-7d-VuO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="igb-GL-QKD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7mR-hh-ebC" kind="relationship" relationship="rootViewController" id="rnr-kZ-U1j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8LN-8I-Brb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="334"/>
+        </scene>
+        <!--Cart Navigation View Controller-->
+        <scene sceneID="HqF-EK-gpm">
+            <objects>
+                <navigationController storyboardIdentifier="cartNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="DMH-qs-whe" customClass="CartNavigationViewController" customModule="Amaro_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zio-Ux-cle">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qpx-X9-9cZ" kind="relationship" relationship="rootViewController" id="Bl6-ZF-Gmx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mxh-bn-qn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="1033"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Down" width="156.52174377441406" height="156.52174377441406"/>
+    </resources>
 </document>

@@ -3,17 +3,64 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		795834E13703E048F03157E6 /* Pods_Amaro_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3161078C7A38E6844E6D62 /* Pods_Amaro_challenge.framework */; };
+		92452D9EE5B2DA22E57210C2 /* Pods_Amaro_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A556C0811E6FF6B0F24096 /* Pods_Amaro_challengeTests.framework */; };
+		A2D5454F9DE3DECE4160BB0F /* Pods_Amaro_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE88451FB930D422AC6F2142 /* Pods_Amaro_challengeUITests.framework */; };
+		B53AAE0A2280F7C800F052C0 /* BestSellerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE092280F7C800F052C0 /* BestSellerViewTests.swift */; };
+		B53AAE0C2280FDB400F052C0 /* BestSellerDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE0B2280FDB400F052C0 /* BestSellerDetailViewTests.swift */; };
+		B53AAE102281131200F052C0 /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE0F2281131200F052C0 /* DetailViewProtocol.swift */; };
+		B53AAE122281138B00F052C0 /* BestSellerDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE112281138B00F052C0 /* BestSellerDetailsPresenter.swift */; };
+		B53AAE142281139F00F052C0 /* BestSellerDetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE132281139F00F052C0 /* BestSellerDetailsPresenterProtocol.swift */; };
+		B53AAE172281160D00F052C0 /* ImageEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE162281160D00F052C0 /* ImageEnum.swift */; };
+		B53AAE19228116B400F052C0 /* StringEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE18228116B400F052C0 /* StringEnum.swift */; };
+		B53AAE1B2281180000F052C0 /* SizeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE1A2281180000F052C0 /* SizeEnum.swift */; };
+		B53AAE1D22812C7600F052C0 /* ColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE1C22812C7600F052C0 /* ColorEnum.swift */; };
+		B559191D2283E63F00E96A29 /* URLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B559191C2283E63F00E96A29 /* URLEnum.swift */; };
+		B559191E2283EEB800E96A29 /* StringEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53AAE18228116B400F052C0 /* StringEnum.swift */; };
+		B559191F2283EF8A00E96A29 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B563BBC8228339D8000FC924 /* Localizable.strings */; };
+		B55D182F227BF33D00E5B605 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D182E227BF33D00E5B605 /* DetailViewController.swift */; };
+		B55D1831227D374C00E5B605 /* CartSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D1830227D374C00E5B605 /* CartSingleton.swift */; };
+		B55D1833227D37A400E5B605 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D1832227D37A400E5B605 /* Product.swift */; };
+		B55D1835227D58E300E5B605 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D1834227D58E300E5B605 /* CartViewController.swift */; };
+		B55D1839227E9E1000E5B605 /* CartNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D1838227E9E1000E5B605 /* CartNavigationViewController.swift */; };
+		B55D183C227F36B300E5B605 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D183A227F36B300E5B605 /* CartTableViewCell.swift */; };
+		B55D183D227F36B300E5B605 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55D183B227F36B300E5B605 /* CartTableViewCell.xib */; };
+		B55D183F227F9B6B00E5B605 /* CartHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55D183E227F9B6B00E5B605 /* CartHeaderView.xib */; };
+		B55D1841227F9DDE00E5B605 /* CartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D1840227F9DDE00E5B605 /* CartHeaderView.swift */; };
+		B563BBB022823098000FC924 /* CartTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBAF22823098000FC924 /* CartTableViewProtocol.swift */; };
+		B563BBB2228230D8000FC924 /* CartViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBB1228230D8000FC924 /* CartViewProtocol.swift */; };
+		B563BBB42282409F000FC924 /* AlertEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBB32282409F000FC924 /* AlertEnum.swift */; };
+		B563BBB622824575000FC924 /* CartViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBB522824575000FC924 /* CartViewPresenter.swift */; };
+		B563BBB8228245A6000FC924 /* CartViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBB7228245A6000FC924 /* CartViewPresenterProtocol.swift */; };
+		B563BBBA22824F36000FC924 /* CartHeaderViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBB922824F36000FC924 /* CartHeaderViewProtocol.swift */; };
+		B563BBBC22828B83000FC924 /* CartTableViewDelegateAndDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBBB22828B83000FC924 /* CartTableViewDelegateAndDataSource.swift */; };
+		B563BBBE22829AB5000FC924 /* BadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBBD22829AB5000FC924 /* BadgeButton.swift */; };
+		B563BBC1228318EC000FC924 /* BestSellerCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBC0228318EC000FC924 /* BestSellerCollectionViewCellProtocol.swift */; };
+		B563BBC6228339D8000FC924 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B563BBC8228339D8000FC924 /* Localizable.strings */; };
+		B563BBCC22833C1C000FC924 /* BestSellerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B563BBCE22833C1C000FC924 /* BestSellerCollectionViewCell.xib */; };
+		B563BBD42283558A000FC924 /* CartSingletonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBD32283558A000FC924 /* CartSingletonProtocol.swift */; };
+		B563BBD722835EDC000FC924 /* CartSingletonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBD522835ED2000FC924 /* CartSingletonMock.swift */; };
+		B563BBD922837188000FC924 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BBD822837188000FC924 /* CartTests.swift */; };
 		B5658FBD227B5B6900A24251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FBC227B5B6900A24251 /* AppDelegate.swift */; };
-		B5658FBF227B5B6900A24251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FBE227B5B6900A24251 /* ViewController.swift */; };
+		B5658FBF227B5B6900A24251 /* BestSellersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FBE227B5B6900A24251 /* BestSellersViewController.swift */; };
 		B5658FC2227B5B6900A24251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5658FC0227B5B6900A24251 /* Main.storyboard */; };
 		B5658FC4227B5B6A00A24251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5658FC3227B5B6A00A24251 /* Assets.xcassets */; };
 		B5658FC7227B5B6A00A24251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5658FC5227B5B6A00A24251 /* LaunchScreen.storyboard */; };
-		B5658FD2227B5B6B00A24251 /* Amaro_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FD1227B5B6B00A24251 /* Amaro_challengeTests.swift */; };
 		B5658FDD227B5B6B00A24251 /* Amaro_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FDC227B5B6B00A24251 /* Amaro_challengeUITests.swift */; };
+		B5658FEF227B5D9B00A24251 /* BestSellerDelegateAndDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FEE227B5D9B00A24251 /* BestSellerDelegateAndDatasource.swift */; };
+		B5658FF1227B5DDA00A24251 /* BestSeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FF0227B5DDA00A24251 /* BestSeller.swift */; };
+		B5658FF3227B735500A24251 /* BestSellerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FF2227B735500A24251 /* BestSellerViewProtocol.swift */; };
+		B5658FF5227B744D00A24251 /* BestSellerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FF4227B744D00A24251 /* BestSellerModel.swift */; };
+		B5658FF7227B745B00A24251 /* BestSellerModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5658FF6227B745B00A24251 /* BestSellerModelProtocol.swift */; };
+		B565C4BD22820A35009DF0B9 /* FontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565C4BC22820A35009DF0B9 /* FontEnum.swift */; };
+		B58CCEED227B750E00617BE9 /* BestSellerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CCEEC227B750E00617BE9 /* BestSellerPresenter.swift */; };
+		B58CCEEF227B751D00617BE9 /* BestSellerPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CCEEE227B751D00617BE9 /* BestSellerPresenterProtocol.swift */; };
+		B58CCEF1227B7B6E00617BE9 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B58CCEF0227B7B6E00617BE9 /* products.json */; };
+		B58CCEF4227B88CF00617BE9 /* BestSellerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CCEF2227B88CF00617BE9 /* BestSellerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +81,77 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3161078C7A38E6844E6D62 /* Pods_Amaro_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3495013486748792CD9460D2 /* Pods-Amaro-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challenge.release.xcconfig"; path = "Target Support Files/Pods-Amaro-challenge/Pods-Amaro-challenge.release.xcconfig"; sourceTree = "<group>"; };
+		360DCE4DE47B48B868A583BF /* Pods-Amaro-challengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challengeTests.release.xcconfig"; path = "Target Support Files/Pods-Amaro-challengeTests/Pods-Amaro-challengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		36B9B6ACD554448A8FF9F8E2 /* Pods-Amaro-challengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Amaro-challengeTests/Pods-Amaro-challengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		476989302641279501F43CA8 /* Pods-Amaro-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challenge.debug.xcconfig"; path = "Target Support Files/Pods-Amaro-challenge/Pods-Amaro-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		95A556C0811E6FF6B0F24096 /* Pods_Amaro_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88889194E3E7137EC3D849E /* Pods-Amaro-challengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Amaro-challengeUITests/Pods-Amaro-challengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B53AAE092280F7C800F052C0 /* BestSellerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerViewTests.swift; sourceTree = "<group>"; };
+		B53AAE0B2280FDB400F052C0 /* BestSellerDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerDetailViewTests.swift; sourceTree = "<group>"; };
+		B53AAE0F2281131200F052C0 /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
+		B53AAE112281138B00F052C0 /* BestSellerDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerDetailsPresenter.swift; sourceTree = "<group>"; };
+		B53AAE132281139F00F052C0 /* BestSellerDetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerDetailsPresenterProtocol.swift; sourceTree = "<group>"; };
+		B53AAE162281160D00F052C0 /* ImageEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEnum.swift; sourceTree = "<group>"; };
+		B53AAE18228116B400F052C0 /* StringEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEnum.swift; sourceTree = "<group>"; };
+		B53AAE1A2281180000F052C0 /* SizeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeEnum.swift; sourceTree = "<group>"; };
+		B53AAE1C22812C7600F052C0 /* ColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEnum.swift; sourceTree = "<group>"; };
+		B559191C2283E63F00E96A29 /* URLEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEnum.swift; sourceTree = "<group>"; };
+		B55D182E227BF33D00E5B605 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B55D1830227D374C00E5B605 /* CartSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartSingleton.swift; sourceTree = "<group>"; };
+		B55D1832227D37A400E5B605 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B55D1834227D58E300E5B605 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B55D1837227DBCF400E5B605 /* Amaro-challenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amaro-challenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		B55D1838227E9E1000E5B605 /* CartNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartNavigationViewController.swift; sourceTree = "<group>"; };
+		B55D183A227F36B300E5B605 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		B55D183B227F36B300E5B605 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		B55D183E227F9B6B00E5B605 /* CartHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartHeaderView.xib; sourceTree = "<group>"; };
+		B55D1840227F9DDE00E5B605 /* CartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHeaderView.swift; sourceTree = "<group>"; };
+		B563BBAF22823098000FC924 /* CartTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewProtocol.swift; sourceTree = "<group>"; };
+		B563BBB1228230D8000FC924 /* CartViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewProtocol.swift; sourceTree = "<group>"; };
+		B563BBB32282409F000FC924 /* AlertEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertEnum.swift; sourceTree = "<group>"; };
+		B563BBB522824575000FC924 /* CartViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewPresenter.swift; sourceTree = "<group>"; };
+		B563BBB7228245A6000FC924 /* CartViewPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		B563BBB922824F36000FC924 /* CartHeaderViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartHeaderViewProtocol.swift; sourceTree = "<group>"; };
+		B563BBBB22828B83000FC924 /* CartTableViewDelegateAndDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewDelegateAndDataSource.swift; sourceTree = "<group>"; };
+		B563BBBD22829AB5000FC924 /* BadgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeButton.swift; sourceTree = "<group>"; };
+		B563BBC0228318EC000FC924 /* BestSellerCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		B563BBC4228339CD000FC924 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B563BBC5228339CD000FC924 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B563BBC7228339D8000FC924 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B563BBC9228339DC000FC924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B563BBCB22833B8B000FC924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B563BBCD22833C1C000FC924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BestSellerCollectionViewCell.xib; sourceTree = "<group>"; };
+		B563BBD022833C20000FC924 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BestSellerCollectionViewCell.strings; sourceTree = "<group>"; };
+		B563BBD222833C21000FC924 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/BestSellerCollectionViewCell.strings"; sourceTree = "<group>"; };
+		B563BBD32283558A000FC924 /* CartSingletonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartSingletonProtocol.swift; sourceTree = "<group>"; };
+		B563BBD522835ED2000FC924 /* CartSingletonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartSingletonMock.swift; sourceTree = "<group>"; };
+		B563BBD822837188000FC924 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
 		B5658FB9227B5B6900A24251 /* Amaro-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amaro-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5658FBC227B5B6900A24251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5658FBE227B5B6900A24251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5658FBE227B5B6900A24251 /* BestSellersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersViewController.swift; sourceTree = "<group>"; };
 		B5658FC1227B5B6900A24251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5658FC3227B5B6A00A24251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5658FC6227B5B6A00A24251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5658FC8227B5B6A00A24251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5658FCD227B5B6B00A24251 /* Amaro-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amaro-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5658FD1227B5B6B00A24251 /* Amaro_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amaro_challengeTests.swift; sourceTree = "<group>"; };
 		B5658FD3227B5B6B00A24251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5658FD8227B5B6B00A24251 /* Amaro-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amaro-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5658FDC227B5B6B00A24251 /* Amaro_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amaro_challengeUITests.swift; sourceTree = "<group>"; };
 		B5658FDE227B5B6B00A24251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5658FEE227B5D9B00A24251 /* BestSellerDelegateAndDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerDelegateAndDatasource.swift; sourceTree = "<group>"; };
+		B5658FF0227B5DDA00A24251 /* BestSeller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSeller.swift; sourceTree = "<group>"; };
+		B5658FF2227B735500A24251 /* BestSellerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerViewProtocol.swift; sourceTree = "<group>"; };
+		B5658FF4227B744D00A24251 /* BestSellerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerModel.swift; sourceTree = "<group>"; };
+		B5658FF6227B745B00A24251 /* BestSellerModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerModelProtocol.swift; sourceTree = "<group>"; };
+		B565C4BC22820A35009DF0B9 /* FontEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontEnum.swift; sourceTree = "<group>"; };
+		B58CCEEC227B750E00617BE9 /* BestSellerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerPresenter.swift; sourceTree = "<group>"; };
+		B58CCEEE227B751D00617BE9 /* BestSellerPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerPresenterProtocol.swift; sourceTree = "<group>"; };
+		B58CCEF0227B7B6E00617BE9 /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		B58CCEF2227B88CF00617BE9 /* BestSellerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellerCollectionViewCell.swift; sourceTree = "<group>"; };
+		D569F952F185585B72FF53B4 /* Pods-Amaro-challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amaro-challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Amaro-challengeUITests/Pods-Amaro-challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE88451FB930D422AC6F2142 /* Pods_Amaro_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amaro_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795834E13703E048F03157E6 /* Pods_Amaro_challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92452D9EE5B2DA22E57210C2 /* Pods_Amaro_challengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +175,74 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D5454F9DE3DECE4160BB0F /* Pods_Amaro_challengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622EFCC13175B65A527A76FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3161078C7A38E6844E6D62 /* Pods_Amaro_challenge.framework */,
+				95A556C0811E6FF6B0F24096 /* Pods_Amaro_challengeTests.framework */,
+				FE88451FB930D422AC6F2142 /* Pods_Amaro_challengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B53AAE0D228112DE00F052C0 /* BestSellersList */ = {
+			isa = PBXGroup;
+			children = (
+				B5658FBE227B5B6900A24251 /* BestSellersViewController.swift */,
+				B5658FF2227B735500A24251 /* BestSellerViewProtocol.swift */,
+			);
+			path = BestSellersList;
+			sourceTree = "<group>";
+		};
+		B53AAE0E228112EF00F052C0 /* BestSellerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B53AAE0F2281131200F052C0 /* DetailViewProtocol.swift */,
+				B55D182E227BF33D00E5B605 /* DetailViewController.swift */,
+			);
+			path = BestSellerDetails;
+			sourceTree = "<group>";
+		};
+		B53AAE15228115FC00F052C0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B53AAE162281160D00F052C0 /* ImageEnum.swift */,
+				B53AAE18228116B400F052C0 /* StringEnum.swift */,
+				B53AAE1A2281180000F052C0 /* SizeEnum.swift */,
+				B53AAE1C22812C7600F052C0 /* ColorEnum.swift */,
+				B565C4BC22820A35009DF0B9 /* FontEnum.swift */,
+				B563BBB32282409F000FC924 /* AlertEnum.swift */,
+				B559191C2283E63F00E96A29 /* URLEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B563BBBF22829ABB000FC924 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B563BBBD22829AB5000FC924 /* BadgeButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		B5658FB0227B5B6900A24251 = {
 			isa = PBXGroup;
 			children = (
+				B563BBC8228339D8000FC924 /* Localizable.strings */,
+				B55D1837227DBCF400E5B605 /* Amaro-challenge-Bridging-Header.h */,
 				B5658FBB227B5B6900A24251 /* Amaro-challenge */,
 				B5658FD0227B5B6B00A24251 /* Amaro-challengeTests */,
 				B5658FDB227B5B6B00A24251 /* Amaro-challengeUITests */,
 				B5658FBA227B5B6900A24251 /* Products */,
+				E4227067C267EEF7F806A8FE /* Pods */,
+				622EFCC13175B65A527A76FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +260,18 @@
 			isa = PBXGroup;
 			children = (
 				B5658FBC227B5B6900A24251 /* AppDelegate.swift */,
-				B5658FBE227B5B6900A24251 /* ViewController.swift */,
+				B55D1830227D374C00E5B605 /* CartSingleton.swift */,
+				B563BBD32283558A000FC924 /* CartSingletonProtocol.swift */,
+				B53AAE15228115FC00F052C0 /* Enums */,
+				B5658FED227B5D6300A24251 /* Delegate And DataSource */,
+				B5658FEC227B5B8D00A24251 /* Presenter */,
+				B5658FEB227B5B8800A24251 /* View */,
+				B5658FEA227B5B7F00A24251 /* Model */,
 				B5658FC0227B5B6900A24251 /* Main.storyboard */,
 				B5658FC3227B5B6A00A24251 /* Assets.xcassets */,
 				B5658FC5227B5B6A00A24251 /* LaunchScreen.storyboard */,
 				B5658FC8227B5B6A00A24251 /* Info.plist */,
+				B58CCEF0227B7B6E00617BE9 /* products.json */,
 			);
 			path = "Amaro-challenge";
 			sourceTree = "<group>";
@@ -110,7 +279,10 @@
 		B5658FD0227B5B6B00A24251 /* Amaro-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5658FD1227B5B6B00A24251 /* Amaro_challengeTests.swift */,
+				B53AAE092280F7C800F052C0 /* BestSellerViewTests.swift */,
+				B53AAE0B2280FDB400F052C0 /* BestSellerDetailViewTests.swift */,
+				B563BBD822837188000FC924 /* CartTests.swift */,
+				B563BBD522835ED2000FC924 /* CartSingletonMock.swift */,
 				B5658FD3227B5B6B00A24251 /* Info.plist */,
 			);
 			path = "Amaro-challengeTests";
@@ -125,6 +297,90 @@
 			path = "Amaro-challengeUITests";
 			sourceTree = "<group>";
 		};
+		B5658FEA227B5B7F00A24251 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5658FF0227B5DDA00A24251 /* BestSeller.swift */,
+				B5658FF4227B744D00A24251 /* BestSellerModel.swift */,
+				B5658FF6227B745B00A24251 /* BestSellerModelProtocol.swift */,
+				B55D1832227D37A400E5B605 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5658FEB227B5B8800A24251 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B563BBBF22829ABB000FC924 /* Button */,
+				B565C4BB2282083B009DF0B9 /* Cart */,
+				B565C4B92281EE6F009DF0B9 /* Cells */,
+				B53AAE0D228112DE00F052C0 /* BestSellersList */,
+				B53AAE0E228112EF00F052C0 /* BestSellerDetails */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5658FEC227B5B8D00A24251 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B58CCEEC227B750E00617BE9 /* BestSellerPresenter.swift */,
+				B58CCEEE227B751D00617BE9 /* BestSellerPresenterProtocol.swift */,
+				B53AAE112281138B00F052C0 /* BestSellerDetailsPresenter.swift */,
+				B53AAE132281139F00F052C0 /* BestSellerDetailsPresenterProtocol.swift */,
+				B563BBB522824575000FC924 /* CartViewPresenter.swift */,
+				B563BBB7228245A6000FC924 /* CartViewPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B5658FED227B5D6300A24251 /* Delegate And DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B5658FEE227B5D9B00A24251 /* BestSellerDelegateAndDatasource.swift */,
+				B563BBBB22828B83000FC924 /* CartTableViewDelegateAndDataSource.swift */,
+			);
+			path = "Delegate And DataSource";
+			sourceTree = "<group>";
+		};
+		B565C4B92281EE6F009DF0B9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B563BBAF22823098000FC924 /* CartTableViewProtocol.swift */,
+				B55D183A227F36B300E5B605 /* CartTableViewCell.swift */,
+				B55D183B227F36B300E5B605 /* CartTableViewCell.xib */,
+				B563BBC0228318EC000FC924 /* BestSellerCollectionViewCellProtocol.swift */,
+				B58CCEF2227B88CF00617BE9 /* BestSellerCollectionViewCell.swift */,
+				B563BBCE22833C1C000FC924 /* BestSellerCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B565C4BB2282083B009DF0B9 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				B55D183E227F9B6B00E5B605 /* CartHeaderView.xib */,
+				B55D1840227F9DDE00E5B605 /* CartHeaderView.swift */,
+				B563BBB922824F36000FC924 /* CartHeaderViewProtocol.swift */,
+				B55D1838227E9E1000E5B605 /* CartNavigationViewController.swift */,
+				B55D1834227D58E300E5B605 /* CartViewController.swift */,
+				B563BBB1228230D8000FC924 /* CartViewProtocol.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		E4227067C267EEF7F806A8FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				476989302641279501F43CA8 /* Pods-Amaro-challenge.debug.xcconfig */,
+				3495013486748792CD9460D2 /* Pods-Amaro-challenge.release.xcconfig */,
+				36B9B6ACD554448A8FF9F8E2 /* Pods-Amaro-challengeTests.debug.xcconfig */,
+				360DCE4DE47B48B868A583BF /* Pods-Amaro-challengeTests.release.xcconfig */,
+				A88889194E3E7137EC3D849E /* Pods-Amaro-challengeUITests.debug.xcconfig */,
+				D569F952F185585B72FF53B4 /* Pods-Amaro-challengeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +388,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5658FE1227B5B6B00A24251 /* Build configuration list for PBXNativeTarget "Amaro-challenge" */;
 			buildPhases = (
+				3F0CD6B2E6319D71F0EF3328 /* [CP] Check Pods Manifest.lock */,
 				B5658FB5227B5B6900A24251 /* Sources */,
 				B5658FB6227B5B6900A24251 /* Frameworks */,
 				B5658FB7227B5B6900A24251 /* Resources */,
+				CB92B46E425FAD11065C994A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +407,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5658FE4227B5B6B00A24251 /* Build configuration list for PBXNativeTarget "Amaro-challengeTests" */;
 			buildPhases = (
+				82C2E16DD7F8D1A6372D4EC1 /* [CP] Check Pods Manifest.lock */,
 				B5658FC9227B5B6B00A24251 /* Sources */,
 				B5658FCA227B5B6B00A24251 /* Frameworks */,
 				B5658FCB227B5B6B00A24251 /* Resources */,
+				143EA72B62B775C925538F33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,9 +427,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5658FE7227B5B6B00A24251 /* Build configuration list for PBXNativeTarget "Amaro-challengeUITests" */;
 			buildPhases = (
+				ED636DFCAC5460DBEDFFBEF2 /* [CP] Check Pods Manifest.lock */,
 				B5658FD4227B5B6B00A24251 /* Sources */,
 				B5658FD5227B5B6B00A24251 /* Frameworks */,
 				B5658FD6227B5B6B00A24251 /* Resources */,
+				A211D35608B565B33974683B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +473,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = B5658FB0227B5B6900A24251;
 			productRefGroup = B5658FBA227B5B6900A24251 /* Products */;
@@ -230,8 +493,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5658FC7227B5B6A00A24251 /* LaunchScreen.storyboard in Resources */,
+				B58CCEF1227B7B6E00617BE9 /* products.json in Resources */,
 				B5658FC4227B5B6A00A24251 /* Assets.xcassets in Resources */,
+				B55D183D227F36B300E5B605 /* CartTableViewCell.xib in Resources */,
 				B5658FC2227B5B6900A24251 /* Main.storyboard in Resources */,
+				B563BBC6228339D8000FC924 /* Localizable.strings in Resources */,
+				B55D183F227F9B6B00E5B605 /* CartHeaderView.xib in Resources */,
+				B563BBCC22833C1C000FC924 /* BestSellerCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,18 +514,173 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B559191F2283EF8A00E96A29 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143EA72B62B775C925538F33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeTests/Pods-Amaro-challengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeTests/Pods-Amaro-challengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeTests/Pods-Amaro-challengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F0CD6B2E6319D71F0EF3328 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82C2E16DD7F8D1A6372D4EC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro-challengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A211D35608B565B33974683B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeUITests/Pods-Amaro-challengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeUITests/Pods-Amaro-challengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Amaro-challengeUITests/Pods-Amaro-challengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB92B46E425FAD11065C994A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challenge/Pods-Amaro-challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Amaro-challenge/Pods-Amaro-challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Amaro-challenge/Pods-Amaro-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED636DFCAC5460DBEDFFBEF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Amaro-challengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5658FB5227B5B6900A24251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5658FBF227B5B6900A24251 /* ViewController.swift in Sources */,
+				B55D182F227BF33D00E5B605 /* DetailViewController.swift in Sources */,
+				B563BBB8228245A6000FC924 /* CartViewPresenterProtocol.swift in Sources */,
+				B565C4BD22820A35009DF0B9 /* FontEnum.swift in Sources */,
+				B53AAE172281160D00F052C0 /* ImageEnum.swift in Sources */,
+				B563BBB42282409F000FC924 /* AlertEnum.swift in Sources */,
+				B53AAE102281131200F052C0 /* DetailViewProtocol.swift in Sources */,
+				B5658FF1227B5DDA00A24251 /* BestSeller.swift in Sources */,
+				B55D1835227D58E300E5B605 /* CartViewController.swift in Sources */,
+				B58CCEED227B750E00617BE9 /* BestSellerPresenter.swift in Sources */,
+				B563BBBC22828B83000FC924 /* CartTableViewDelegateAndDataSource.swift in Sources */,
+				B58CCEEF227B751D00617BE9 /* BestSellerPresenterProtocol.swift in Sources */,
+				B563BBBA22824F36000FC924 /* CartHeaderViewProtocol.swift in Sources */,
+				B53AAE19228116B400F052C0 /* StringEnum.swift in Sources */,
+				B563BBB2228230D8000FC924 /* CartViewProtocol.swift in Sources */,
+				B563BBD42283558A000FC924 /* CartSingletonProtocol.swift in Sources */,
+				B563BBB622824575000FC924 /* CartViewPresenter.swift in Sources */,
+				B55D1839227E9E1000E5B605 /* CartNavigationViewController.swift in Sources */,
+				B5658FBF227B5B6900A24251 /* BestSellersViewController.swift in Sources */,
+				B53AAE142281139F00F052C0 /* BestSellerDetailsPresenterProtocol.swift in Sources */,
+				B5658FF5227B744D00A24251 /* BestSellerModel.swift in Sources */,
+				B559191D2283E63F00E96A29 /* URLEnum.swift in Sources */,
 				B5658FBD227B5B6900A24251 /* AppDelegate.swift in Sources */,
+				B55D1831227D374C00E5B605 /* CartSingleton.swift in Sources */,
+				B563BBBE22829AB5000FC924 /* BadgeButton.swift in Sources */,
+				B5658FF7227B745B00A24251 /* BestSellerModelProtocol.swift in Sources */,
+				B53AAE122281138B00F052C0 /* BestSellerDetailsPresenter.swift in Sources */,
+				B5658FEF227B5D9B00A24251 /* BestSellerDelegateAndDatasource.swift in Sources */,
+				B563BBC1228318EC000FC924 /* BestSellerCollectionViewCellProtocol.swift in Sources */,
+				B5658FF3227B735500A24251 /* BestSellerViewProtocol.swift in Sources */,
+				B55D1841227F9DDE00E5B605 /* CartHeaderView.swift in Sources */,
+				B58CCEF4227B88CF00617BE9 /* BestSellerCollectionViewCell.swift in Sources */,
+				B53AAE1B2281180000F052C0 /* SizeEnum.swift in Sources */,
+				B55D1833227D37A400E5B605 /* Product.swift in Sources */,
+				B563BBB022823098000FC924 /* CartTableViewProtocol.swift in Sources */,
+				B53AAE1D22812C7600F052C0 /* ColorEnum.swift in Sources */,
+				B55D183C227F36B300E5B605 /* CartTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +688,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5658FD2227B5B6B00A24251 /* Amaro_challengeTests.swift in Sources */,
+				B53AAE0C2280FDB400F052C0 /* BestSellerDetailViewTests.swift in Sources */,
+				B563BBD722835EDC000FC924 /* CartSingletonMock.swift in Sources */,
+				B53AAE0A2280F7C800F052C0 /* BestSellerViewTests.swift in Sources */,
+				B563BBD922837188000FC924 /* CartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B559191E2283EEB800E96A29 /* StringEnum.swift in Sources */,
 				B5658FDD227B5B6B00A24251 /* Amaro_challengeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +720,31 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B563BBC8228339D8000FC924 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B563BBC7228339D8000FC924 /* pt-BR */,
+				B563BBC9228339DC000FC924 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B563BBCE22833C1C000FC924 /* BestSellerCollectionViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B563BBCD22833C1C000FC924 /* Base */,
+				B563BBD022833C20000FC924 /* en */,
+				B563BBD222833C21000FC924 /* pt-BR */,
+			);
+			name = BestSellerCollectionViewCell.xib;
+			sourceTree = "<group>";
+		};
 		B5658FC0227B5B6900A24251 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B5658FC1227B5B6900A24251 /* Base */,
+				B563BBC4228339CD000FC924 /* pt-BR */,
+				B563BBCB22833B8B000FC924 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -305,6 +753,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B5658FC6227B5B6A00A24251 /* Base */,
+				B563BBC5228339CD000FC924 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,6 +765,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "http://localhost:8080/products";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -377,6 +828,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "http://www.mocky.io/v2/59b6a65a0f0000e90471257d";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,6 +883,7 @@
 		};
 		B5658FE2227B5B6B00A24251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476989302641279501F43CA8 /* Pods-Amaro-challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +895,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thufik.Amaro-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Amaro-challenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +903,7 @@
 		};
 		B5658FE3227B5B6B00A24251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3495013486748792CD9460D2 /* Pods-Amaro-challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +915,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thufik.Amaro-challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Amaro-challenge-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +923,7 @@
 		};
 		B5658FE5227B5B6B00A24251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B9B6ACD554448A8FF9F8E2 /* Pods-Amaro-challengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +937,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thufik.Amaro-challengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaro-challenge.app/Amaro-challenge";
@@ -487,6 +947,7 @@
 		};
 		B5658FE6227B5B6B00A24251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360DCE4DE47B48B868A583BF /* Pods-Amaro-challengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +961,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Thufik.Amaro-challengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaro-challenge.app/Amaro-challenge";
@@ -508,6 +971,7 @@
 		};
 		B5658FE8227B5B6B00A24251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88889194E3E7137EC3D849E /* Pods-Amaro-challengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +992,7 @@
 		};
 		B5658FE9227B5B6B00A24251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D569F952F185585B72FF53B4 /* Pods-Amaro-challengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

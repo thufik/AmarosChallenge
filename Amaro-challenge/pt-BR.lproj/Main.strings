@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "P"; ObjectID = "0AJ-Wf-KeK"; */
+"0AJ-Wf-KeK.normalTitle" = "P";
+
+/* Class = "UINavigationItem"; title = "Desafio Amaro"; ObjectID = "5RK-90-4I3"; */
+"5RK-90-4I3.title" = "Desafio Amaro";
+
+/* Class = "UIButton"; normalTitle = "Adicionar ao carrinho"; ObjectID = "F0a-lx-LRd"; */
+"F0a-lx-LRd.normalTitle" = "Adicionar ao carrinho";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "H8R-d1-41E"; */
+"H8R-d1-41E.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "PP"; ObjectID = "Ozr-4j-wzY"; */
+"Ozr-4j-wzY.normalTitle" = "PP";
+
+/* Class = "UIButton"; normalTitle = "M"; ObjectID = "bdX-Zs-jmx"; */
+"bdX-Zs-jmx.normalTitle" = "M";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cy6-x0-JNH"; */
+"cy6-x0-JNH.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "cancel"; ObjectID = "fQY-pA-dCs"; */
+"fQY-pA-dCs.title" = "cancel";
+
+/* Class = "UIButton"; normalTitle = "G"; ObjectID = "iyS-1e-1Wb"; */
+"iyS-1e-1Wb.normalTitle" = "G";
+
+/* Class = "UIButton"; normalTitle = "GG"; ObjectID = "n7H-5f-TkA"; */
+"n7H-5f-TkA.normalTitle" = "GG";
+
+/* Class = "UINavigationItem"; title = "Detalhes"; ObjectID = "nat-50-sly"; */
+"nat-50-sly.title" = "Detalhes";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xE1-rW-tIF"; */
+"xE1-rW-tIF.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xJz-zp-8Cx"; */
+"xJz-zp-8Cx.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Sacola"; ObjectID = "y1c-06-UC8"; */
+"y1c-06-UC8.title" = "Sacola";

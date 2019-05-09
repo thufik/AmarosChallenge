@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Amaro-challenge
+
+  Created by EquipeSuporteAplicacao on 5/8/19.
+  Copyright © 2019 Thufik. All rights reserved.
+*/
+
+"buy" = "Comprar";
+"amaroschallenge" = "Desafio Amaro";
+"bag" = "Sacola";
+"emptyCart" = "Seu carrinho está vazio";
+"total" = "Total";
+"color" = "Cor :";
+"addToCart" = "Adicionar ao carrinho";
+"details" = "Detalhes";
+"unavailable" = "Indisponível";
+"unavailableAtTheMoment" = "Tamanho indisponível no momento";
+"removeLastItem" = "Deseja remover esse item do carrinho?";
+"notNow" = "Agora não";
+"yes" = "Sim";
+"dearCustomer" = "Querido cliente!";
+"errorLoadMessage" = "Erro ao carregar produtos!";

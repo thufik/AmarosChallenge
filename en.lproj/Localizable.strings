@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Amaro-challenge
+
+  Created by EquipeSuporteAplicacao on 5/8/19.
+  Copyright © 2019 Thufik. All rights reserved.
+*/
+
+"buy" = "Buy";
+"amaroschallenge" = "Amaro's Challenge";
+"bag" = "Bag";
+"emptyCart" = "Your cart is empty";
+"total" = "Total";
+"color" = "Color :";
+"addToCart" = "Add to Cart";
+"details" = "Details";
+"unavailable" = "Unavailable";
+"unavailableAtTheMoment" = "Size currently unavailable";
+"removeLastItem" = "Do you want to remove this item from the cart?";
+"notNow" = "Not now";
+"yes" = "Yes";
+"dearCustomer" = "Dear customer!";
+"errorLoadMessage" = "Error to load products!";
